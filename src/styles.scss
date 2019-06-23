@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+
+.btn {
+  background: #23A4EF;
+  color: white;
+  padding: 14px;
+  width: 35%;
+}
+
+.para {
+  color : #7B88A0; 
+  font-family: 'Cabin', sans-serif;
+  line-height: 20px ; 
+}
+
+@media (min-width: 300px) { 
+  .btn {
+    background: #23A4EF;
+    color: white;
+    padding: 14px;
+    width: 100%;
+  }
+
+  .btn:hover {
+    background: #23A4EF;
+    color: white;
+    padding: 14px;
+    width: 100%;
+  }
+}
+
+
+
+
+i {
+  color: #23A4EF;
+}

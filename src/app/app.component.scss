@@ -1,0 +1,26 @@
+.example-container {
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.navText {
+  padding: 4px;
+  margin-top: -8px;
+  margin-left: 13px;
+  color : white ; 
+  padding: 4px;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.bg-light {
+  background : #083349  !important; 
+}
