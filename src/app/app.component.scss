@@ -18,9 +18,21 @@
 }
 
 .example-sidenav {
-  padding: 20px;
+  padding: 10px;
+      background : #083349 ; 
 }
 
 .bg-light {
   background : #083349  !important; 
+}
+
+
+@media (max-width: 400px) { 
+  .example-sidenav {
+    padding: 30px;
+    width: 50%;
+    background : #083349 ; 
+  }
+
+  
 }

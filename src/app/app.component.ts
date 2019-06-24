@@ -9,5 +9,21 @@ export class AppComponent {
   title = 'studentApp';
   showFiller = false;
   events = [];
+  sideBarMenu = [
+    {
+    name : 'Tutor' ,
+    url : 'tutor' ,
+    icon : '' ,
+    active : true
+    },
+    {
+      name : 'Settings' ,
+      url : 'settings' ,
+      icon : '' ,
+      active : false
+      }
+
+
+] ;
 
 }

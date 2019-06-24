@@ -2,22 +2,23 @@
 
   <!-- Links -->
   <ul class="navbar-nav">
+   <div>
+   <span >
     <i class="fa fa-bars" aria-hidden="true" (click)="drawer.toggle()" style = 'color : white ; cursor : pointer ;  ' ></i> 
-
+   </span>
     <span class = 'navText' >My Tutor </span>
-    </ul>
+  </div>  
+  </ul>
 </nav>
 <mat-drawer-container class="example-container"  autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+    <div *ngFor = 'let sideBar of sideBarMenu'>
+    <a [routerLink] = 'sideBar.url' >{{sideBar.name}}</a>
+    </div>
   </mat-drawer>
 
   <div>
-    <app-my-tutor></app-my-tutor>
+    <router-outlet></router-outlet>
   </div>
 
 </mat-drawer-container>

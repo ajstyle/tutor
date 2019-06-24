@@ -5,7 +5,7 @@
 
 
 
-.btn {
+.button {
   background: #23A4EF;
   color: white;
   padding: 14px;
@@ -18,15 +18,21 @@
   line-height: 20px ; 
 }
 
+.vr {
+  border-right: 1px solid #ccc !important;
+}
+
+
+
 @media (min-width: 300px) { 
-  .btn {
+  .button {
     background: #23A4EF;
     color: white;
     padding: 14px;
     width: 100%;
   }
 
-  .btn:hover {
+  .button:hover {
     background: #23A4EF;
     color: white;
     padding: 14px;

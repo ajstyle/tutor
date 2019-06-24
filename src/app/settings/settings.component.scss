@@ -1,0 +1,22 @@
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+}
+
+
+.buttonOutline{
+  width : 50%; padding : 9px 
+}
+
+@media (max-width: 400px) { 
+  .buttonOutline {
+    width: 83%;
+    padding: 3px;
+    margin-top: 50px;
+    padding: 20px   ; 
+    }
+}

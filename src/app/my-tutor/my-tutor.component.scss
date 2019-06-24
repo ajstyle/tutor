@@ -2,6 +2,8 @@
   vertical-align: middle;
   width: 50px;
   height: 50px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
 }
 .card {
@@ -13,16 +15,9 @@
 .mycontent-left {
   border-right: 1px dashed #333;
 }
-.vr {
-  border-right: 1px solid #ccc !important;
-}
 
 
 
-.avatar {
-  width: 105px;
-  height: 105px;
-}
 
 @media (min-width: 300px) { 
   .avatar {

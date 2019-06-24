@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { MyTutorComponent } from './my-tutor/my-tutor.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyTutorComponent
+    MyTutorComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,8 @@ import { MyTutorComponent } from './my-tutor/my-tutor.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule ,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

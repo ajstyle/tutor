@@ -4,7 +4,7 @@
 <div class="container">
 <div class="row">
 <div class="col-4 col-md-3 vr ">
-  <img src="../../assets//images/avatar2.png" alt="Avatar" class="avatar"><br/>
+  <img src="../../assets//images/avatar2.jpg" alt="Avatar" class="avatar"><br/>
 <p class = '' style = 'font-size : 16px '> Sandeep <br/> Tiwari </p>
 
 <p class = 'para '>Graduate CS <br/>Student at UTA </p>
@@ -15,7 +15,7 @@
   <p class = 'para'><i class="fa fa-map-marker" aria-hidden="true"></i>    &nbsp; TCU Graduate with the great tutoring abilities</p>
 
   <div class="text-center mt-5"> 
-    <button class = 'btn'> Book Me Now </button>
+    <button class = 'button'> Book Me Now </button>
   </div>
 </div>
 </div>
@@ -24,7 +24,18 @@
 </div>
 
 <ul class="list-group">
-  <li class="list-group-item">First item</li>
-  <li class="list-group-item">Second item</li>
-  <li class="list-group-item">Third item</li>
+  <li class="list-group-item" *ngFor = ' let p of text'>
+    <div class="row">
+      <div class="col-4 col-md-4">
+        <img [src]="p.image" alt="..." class="img-thumbnail">
+
+      </div>
+      <div class="col-8 col-md-8">
+       <p> {{p.heading}}  </p>
+       <p class = 'para'> {{p.desc}}</p>
+        <a href = '#'> Read More </a>
+      </div>
+    </div>
+  </li>
+
 </ul>

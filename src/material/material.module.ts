@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
 
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -13,8 +14,9 @@ import {FormsModule , ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatSidenavModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule
   ],
-  exports : [MatCheckboxModule, MatButtonModule, MatSidenavModule]
+  exports : [MatCheckboxModule, MatButtonModule, MatSidenavModule, MatDividerModule]
 })
 export class MaterialModule { }
