@@ -2,9 +2,17 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+@import './lity.css' ; 
 
 
+td.mat-cell {
+  font-family: 'Avenir-book' , 'arial', sans-serif; ; 
 
+}
+tr.mat-header-row {
+  height: 56px;
+  font-family: 'Avenir-Black' , 'arial', sans-serif; ; 
+}
 .button {
   background: #23A4EF;
   color: white;
@@ -45,4 +53,30 @@
 
 i {
   color: #23A4EF;
+}
+
+@font-face {
+  font-family: Avenir-Black;
+  src: url('./assets/fonts/Avenir-Black-03.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: Maxx;
+  src: url('./assets/fonts/Maax-Bold.ttf') format("opentype");
+}
+
+
+@font-face {
+  font-family: Avenir-Black-Oblique;
+  src: url('./assets/fonts/Avenir-BookOblique-02.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-book;
+  src: url('./assets/fonts/Avenir-Book-01.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url('./assets/fonts/Avenir-Heavy-05.ttf') format("opentype");
 }

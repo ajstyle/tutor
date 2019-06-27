@@ -21,8 +21,20 @@ export class AppComponent {
       url : 'settings' ,
       icon : '' ,
       active : false
-      }
-
+      },
+      {
+        name : 'completeLesson' ,
+        url : 'completeLesson' ,
+        icon : '' ,
+        active : false
+        },
+        {
+          name : 'scheduleSetting' ,
+          url : 'scheduleLesson' ,
+          icon : '' ,
+          active : false
+          }
+  
 
 ] ;
 

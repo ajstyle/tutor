@@ -1,0 +1,89 @@
+
+<div class="container ">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <p class = 'heading'> Request a New Tutor </p> 
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="container mt-3" style = 'position : relative ; left : 300px  '>
+    <div class="row">
+        <div class="col-md-12">
+          <p class = 'para'>   When would you like to start tutoring?</p> 
+        </div>
+      </div>
+</div>
+
+
+<div class="container" style = 'position : relative ; left : 300px  '>
+  <div class="row">
+      <div class="col-md-12" style = 'display : flex '>
+        <div class="numberContainer text-center" *ngFor = 'let date of dateList'>
+            <p style = 'margin-bottom: 0px ;   
+            position: relative;  top: 5px; font-size : 18px'>{{date.month}}</p>
+            <p style = 'font-size: 36px; margin-bottom : -7px ; '>{{date.date}}</p>
+            <p  style = 'font-size: 13px ; font-family: Avenir-book '>{{date.day}}</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container mt-3" style = 'position : relative ; left : 300px  '>
+  <div class="row">
+      <div class="col-md-12">
+        <p class = 'para'>   Select time</p> 
+      </div>
+    </div>
+</div>
+
+
+<div class="container" style = 'position : relative ; left : 300px  '>
+<div class="row">
+    <div class="col-md-12" style = 'display : flex '>
+      <div class="timeContainer text-center" *ngFor = 'let time of timeList'>
+          <p class = 'mt-2' style = 'font-size : 18px'>{{time.greeting}}</p>
+          <p style = 'font-size: 18px;  '>{{time.time}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+  <div class="form-group">
+    <label for="sel1" class = 'para'>Level :</label>
+    <select class="form-control" placeholder = 'Select Level' id="sel1" style = 'width : 40rem'>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+
+  </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="form-group">
+      <label for="sel1" class = 'para'>Subject :</label>
+      <input type="text" class="form-control" id="usr" placeholder = "Type Subject" style = 'width : 40rem'>
+    </div>
+    </div>
+
+
+
+  <div class="row mt-2">
+    <div class="form-group">
+      <label for="sel1" class = 'para'>    What else would you like the tutor to know about your tutoring needs :</label>
+      <textarea class="form-control" rows="5" id="comment" style = 'width : 40rem' placeholder = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'></textarea>
+
+    </div>
+    </div>
+    <button type="submit" class="button" style = ' width: 56%; height: 48px;'
+>Save Changes</button>
+
+
+</div>
+
+
+

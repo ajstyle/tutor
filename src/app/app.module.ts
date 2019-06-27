@@ -8,12 +8,16 @@ import {FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { MyTutorComponent } from './my-tutor/my-tutor.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SettingsComponent } from './settings/settings.component';
+import { CompleteLessonComponent } from './complete-lesson/complete-lesson.component';
+import { ScheduleLessonComponent } from './schedule-lesson/schedule-lesson.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyTutorComponent,
-    SettingsComponent
+    SettingsComponent,
+    CompleteLessonComponent,
+    ScheduleLessonComponent
   ],
   imports: [
     BrowserModule,
