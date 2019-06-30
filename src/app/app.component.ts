@@ -33,7 +33,19 @@ export class AppComponent {
           url : 'scheduleLesson' ,
           icon : '' ,
           active : false
-          }
+          },
+          {
+            name : 'pendingLesson' ,
+            url : 'pendingLesson' ,
+            icon : '' ,
+            active : false
+            },
+            {
+              name : 'Setting Qualification' ,
+              url : 'settingQualification' ,
+              icon : '' ,
+              active : false
+              }
   
 
 ] ;

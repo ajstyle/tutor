@@ -10,6 +10,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { SettingsComponent } from './settings/settings.component';
 import { CompleteLessonComponent } from './complete-lesson/complete-lesson.component';
 import { ScheduleLessonComponent } from './schedule-lesson/schedule-lesson.component';
+import { PendingLessonComponent } from './pending-lesson/pending-lesson.component';
+import { SettingsQualificationComponent } from './settings-qualification/settings-qualification.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ScheduleLessonComponent } from './schedule-lesson/schedule-lesson.compo
     MyTutorComponent,
     SettingsComponent,
     CompleteLessonComponent,
-    ScheduleLessonComponent
+    ScheduleLessonComponent,
+    PendingLessonComponent,
+    SettingsQualificationComponent
   ],
   imports: [
     BrowserModule,

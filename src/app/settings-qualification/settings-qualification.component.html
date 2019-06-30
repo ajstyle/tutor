@@ -1,0 +1,125 @@
+<div class="col-md-12 mt-4 text-center">
+    <p class = 'heading'> Completion Level: 85.71%</p>
+    <div class = 'center'>
+    <mat-progress-bar color='accent' mode="determinate" value="85"></mat-progress-bar>
+      </div>
+</div>
+
+<mat-tab-group >
+  <mat-tab label="PROFILE"> 
+  </mat-tab>
+  <mat-tab label="SUBJECTS">  
+   
+  </mat-tab>
+  <mat-tab label="EDUCATION"> EDUCATION </mat-tab>
+  <mat-tab label="QUALIFICATIONS" > 
+    
+    <div class="container" style = 'padding-left: 10em ; padding-right: 10em ;  padding-top : 3em'>
+      <div class="row">
+      
+        <div class="col-md-12">
+            <p class = 'heading'> The qualification tap allows you to enter a brief detail description of what qualifies you to tutor each of the subjects you have selected. We recommend a minimum of three sentences per subject qualification description. If you need more help with this section of the application please watch the help video located on the right side of the page.</p>
+        </div>
+      </div>
+
+      <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  College               
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <div class="row">
+                  <mat-list role="list" style = 'width : 100%'>
+                      <mat-list-item>
+
+                          <div class="col-md-4 header">
+                              Subject
+                            </div>
+                            <div class="col-md-4 header">
+                              Qualification
+                              </div>
+                              <div class="col-md-4 header">
+                                  Status
+                                </div>
+                                <mat-divider>   </mat-divider>
+
+                      </mat-list-item>
+                      <mat-list-item  *ngFor = 'let subject of subjectArray' role="listitem">
+                          <div class="col-md-4">
+                              {{subject.name}}
+                            </div>
+                            <div class="col-md-4">
+                             <span style = 'color : #23A4EF'> {{subject.qualification}}</span>
+                            </div>
+                            <div class="col-md-4">
+                                <span *ngIf = 'subject.status'> <i class="fa fa-check" style = 'color : green' aria-hidden="true"></i>
+                                </span>
+                                <span *ngIf = '!subject.status'> <i class="fa fa-times" style = 'color : red' aria-hidden="true"></i>
+                                </span>                              </div>
+                              <mat-divider></mat-divider>
+
+                      </mat-list-item>
+                    </mat-list>
+              
+            </div>
+            
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    High School               
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+            
+              <div class="row">
+                    <mat-list role="list" style = 'width : 100%'>
+                        <mat-list-item>
+                            <div class="col-md-4 header">
+                                Subject
+                              </div>
+                              <div class="col-md-4 header">
+                                Qualification
+                                </div>
+                                <div class="col-md-4 header">
+                                    Status
+                                  </div>
+
+                                  <mat-divider>   </mat-divider>
+  
+                        </mat-list-item>
+                        <mat-list-item  *ngFor = 'let subject of subjectArray' role="listitem">
+                            <div class="col-md-4">
+                                {{subject.name}}
+                              </div>
+                              <div class="col-md-4">
+                               <span style = 'color : #23A4EF'> {{subject.qualification}}</span>
+                              </div>
+                              <div class="col-md-4">
+                                 <span *ngIf = 'subject.status'> <i class="fa fa-check" style = 'color : green' aria-hidden="true"></i>
+                                 </span>
+                                 <span *ngIf = '!subject.status'> <i class="fa fa-times" style = 'color : red' aria-hidden="true"></i>
+                                 </span>
+
+                                </div>
+                                <mat-divider></mat-divider>
+  
+                        </mat-list-item>
+                      </mat-list>
+                
+              </div>
+              
+            </mat-expansion-panel>
+        </mat-accordion>
+        <div class = 'mt-4'>
+        <button type="submit" class="button" style = 'sheight: 48px;'
+        >Save Changes</button>
+          </div>
+    </div>
+
+     </mat-tab>
+  <mat-tab label="AVAILABILITY"> AVAILABILITY </mat-tab>
+  <mat-tab label="PASSWORD"> PASSWORD </mat-tab>
+
+</mat-tab-group>

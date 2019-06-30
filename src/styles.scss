@@ -11,7 +11,20 @@ td.mat-cell {
 }
 tr.mat-header-row {
   height: 56px;
-  font-family: 'Avenir-Black' , 'arial', sans-serif; ; 
+  font-family: 'Avenir-Black' , 'arial', sans-serif;
+}
+
+.mat-tab-label-content {
+  color : #23A4EF !important; 
+}
+.mat-progress-bar.mat-accent .mat-progress-bar-fill::after {
+  background-color: #23A4EF !important;
+}
+
+.mat-accent {
+  color : #23A4EF !important; 
+
+
 }
 .button {
   background: #23A4EF;
@@ -80,3 +93,15 @@ i {
   font-family: Avenir-Heavy;
   src: url('./assets/fonts/Avenir-Heavy-05.ttf') format("opentype");
 }
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: url('./assets/fonts/Avenir-Roman-12.ttf') format("opentype");
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
