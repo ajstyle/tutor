@@ -14,3 +14,19 @@ mat-panel-title {
   font-size: 15px ;
 }
 
+.qualification {
+  padding-left: 10em ;
+   padding-right: 10em ; 
+    padding-top : 3em
+}
+
+
+
+@media(max-width:800px){
+  .qualification {
+  padding : 4px ; 
+  margin-top: 15px ; 
+  overflow-y: hidden; // hide vertical
+overflow-x: hidden; 
+  }
+}
