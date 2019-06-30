@@ -6,6 +6,7 @@ import {CompleteLessonComponent} from './complete-lesson/complete-lesson.compone
 import {ScheduleLessonComponent} from './schedule-lesson/schedule-lesson.component' ;
 import {PendingLessonComponent} from './pending-lesson/pending-lesson.component' ;
 import {SettingsQualificationComponent} from './settings-qualification/settings-qualification.component' ;
+import {ReviewComponent} from './review/review.component' ;
 
 const routes: Routes = [{
   path : '' ,
@@ -39,7 +40,12 @@ const routes: Routes = [{
 {
   path : 'settingQualification',
   component : SettingsQualificationComponent
+},
+{
+  path : 'review',
+  component : ReviewComponent
 }
+
 ];
 
 

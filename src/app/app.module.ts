@@ -12,6 +12,9 @@ import { CompleteLessonComponent } from './complete-lesson/complete-lesson.compo
 import { ScheduleLessonComponent } from './schedule-lesson/schedule-lesson.component';
 import { PendingLessonComponent } from './pending-lesson/pending-lesson.component';
 import { SettingsQualificationComponent } from './settings-qualification/settings-qualification.component';
+import { ReviewPopupComponent } from './review-popup/review-popup.component';
+import { ReviewComponent } from './review/review.component';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { SettingsQualificationComponent } from './settings-qualification/setting
     CompleteLessonComponent,
     ScheduleLessonComponent,
     PendingLessonComponent,
-    SettingsQualificationComponent
+    SettingsQualificationComponent,
+    ReviewPopupComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +35,11 @@ import { SettingsQualificationComponent } from './settings-qualification/setting
     MaterialModule,
     FormsModule ,
     ReactiveFormsModule,
-    MatTabsModule
+    MatTabsModule,
+    RatingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents : [ReviewPopupComponent]
 })
 export class AppModule { }

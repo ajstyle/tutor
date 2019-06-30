@@ -45,7 +45,13 @@ export class AppComponent {
               url : 'settingQualification' ,
               icon : '' ,
               active : false
-              }
+              },
+              {
+                name : 'Review' ,
+                url : 'review' ,
+                icon : '' ,
+                active : false
+                }
   
 
 ] ;
