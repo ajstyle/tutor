@@ -13,7 +13,8 @@
 <mat-drawer-container class="example-container"  autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
     <div *ngFor = 'let sideBar of sideBarMenu'>
-    <a [routerLink] = 'sideBar.url' >{{sideBar.name}}</a>
+    <a [routerLink] = 'sideBar.url'  routerLinkActive="active-link" > <p class = 'ml-3 sideBar'><i [class]="sideBar.icon" aria-hidden="true"></i>&nbsp;&nbsp;
+      {{sideBar.name}} </p></a>
     </div>
   </mat-drawer>
 

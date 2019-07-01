@@ -15,6 +15,7 @@ import { SettingsQualificationComponent } from './settings-qualification/setting
 import { ReviewPopupComponent } from './review-popup/review-popup.component';
 import { ReviewComponent } from './review/review.component';
 import { RatingModule } from 'ng-starrating';
+import { ScheduleLessonStudentComponent } from './schedule-lesson-student/schedule-lesson-student.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RatingModule } from 'ng-starrating';
     PendingLessonComponent,
     SettingsQualificationComponent,
     ReviewPopupComponent,
-    ReviewComponent
+    ReviewComponent,
+    ScheduleLessonStudentComponent
   ],
   imports: [
     BrowserModule,

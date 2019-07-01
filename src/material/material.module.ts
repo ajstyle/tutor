@@ -11,7 +11,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { MatCalendar } from '@angular/material';
+import { MatDatepickerModule } from '@angular/material';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import {MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
   ],
@@ -30,11 +33,15 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSortModule,
     MatExpansionModule,
     MatProgressBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMomentDateModule,
+    MatNativeDateModule,
+    MatDatepickerModule
 
   ],
   exports : [MatCheckboxModule, MatButtonModule, MatFormFieldModule, MatInputModule ,
-          MatListModule, MatProgressBarModule,
-           MatPaginatorModule, MatSidenavModule, MatSortModule , MatDialogModule ,  MatExpansionModule, MatDividerModule, MatTableModule]
+          MatListModule, MatProgressBarModule, MatMomentDateModule,
+           MatPaginatorModule, MatSidenavModule, MatSortModule ,    MatNativeDateModule,
+           MatDatepickerModule, MatDialogModule ,  MatExpansionModule, MatDividerModule, MatTableModule]
 })
 export class MaterialModule { }

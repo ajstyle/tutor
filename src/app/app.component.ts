@@ -51,7 +51,14 @@ export class AppComponent {
                 url : 'review' ,
                 icon : '' ,
                 active : false
-                }
+                },
+                {
+                  name : 'My Tutors' ,
+                  url : 'myTutors' ,
+                  icon : 'fa fa-user-o' ,
+                  active : false
+                  },
+                
   
 
 ] ;

@@ -1,41 +1,61 @@
 <div class="card">
 <div class="card-body">
 
-<div class="container">
+<div class="container-fluid">
 <div class="row">
-<div class="col-4 col-md-3 vr ">
-  <img src="../../assets//images/avatar2.jpg" alt="Avatar" class="avatar"><br/>
-<p class = '' style = 'font-size : 16px '> Sandeep <br/> Tiwari </p>
+  <div class="col-md-3">
+      <div class="card">
+          <div class="card-body ">
+            <div class =  'text-center'>
+              <img src="../../assets//images/avatar2.jpg" alt="Avatar" class="avatar"><br/>
+            <p class = 'heading'> Sandeep Tiwari </p>
+            </div>
+            <span class = 'mt-5'>
+            <mat-divider> </mat-divider>
+            </span>
+            <div class = 'mt-3'>
+                <p class = 'para'><i class="fa fa-university" aria-hidden="true"></i> &nbsp; Texas Christian University </p>
+                <p class = 'para'><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; (862) 222-6690</p>
+                <p class = 'para'><i class="fa fa-map-marker" aria-hidden="true"></i>    &nbsp; TCU Graduate with the great tutoring abilities</p>
+              
+          </div> 
+          <div class="text-center mt-5"> 
+              <button class = 'button'> Book Me Now </button>
+          </div>                      
+            </div>
+            </div>
+</div>
 
-<p class = 'para '>Graduate CS <br/>Student at UTA </p>
-</div>
-<div class="col-8  col-md-9 ">
-  <p class = 'para'><i class="fa fa-university" aria-hidden="true"></i> &nbsp; Texas Christian University </p>
-  <p class = 'para'><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; (862) 222-6690</p>
-  <p class = 'para'><i class="fa fa-map-marker" aria-hidden="true"></i>    &nbsp; TCU Graduate with the great tutoring abilities</p>
+<div class = 'col-md-9'>
+    <mat-tab-group>
+        <mat-tab label="REVIEWS"> REVIEWS  </mat-tab>
+        <mat-tab label="MY SKILLS"> MY SKILLS </mat-tab>
+        <mat-tab label="ABOUT ME"> ABOUT ME </mat-tab>
+        <mat-tab label="QUALIFICATION"> QUALIFICATION </mat-tab>
+        <mat-tab label="BLOG"> 
+            <ul class="list-group">
+                <li class="list-group-item mt-2" *ngFor = ' let p of text'>
+                  <div class="row">
+                    <div class="col-4 col-md-4">
+                      <img [src]="p.image"  class="img-thumbnail thumb" >
+              
+                    </div>
+                    <div class="col-8 col-md-8">
+                     <p class = 'heading'> {{p.heading}}  </p>
+                     <p class = 'para'> {{p.desc}}</p>
+                      <a href = '#' style = 'color : #23A4EF'> Read More </a>
+                    </div>
+                  </div>
+                </li>
+              
+              </ul>  
+        
+        </mat-tab>
 
-  <div class="text-center mt-5"> 
-    <button class = 'button'> Book Me Now </button>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<ul class="list-group">
-  <li class="list-group-item" *ngFor = ' let p of text'>
-    <div class="row">
-      <div class="col-4 col-md-4">
-        <img [src]="p.image" alt="..." class="img-thumbnail">
-
-      </div>
-      <div class="col-8 col-md-8">
-       <p> {{p.heading}}  </p>
-       <p class = 'para'> {{p.desc}}</p>
-        <a href = '#'> Read More </a>
-      </div>
-    </div>
-  </li>
-
-</ul>
+      </mat-tab-group>
+</div>
+</div>
+</div>
+</div>
+</div>

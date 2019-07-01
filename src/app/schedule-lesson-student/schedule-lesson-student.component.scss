@@ -1,0 +1,56 @@
+.calendar-wrapper{
+  width: 70%;
+}
+
+.avatar {
+  vertical-align: middle;
+ 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.fa {
+ color :  #7B88A0
+}
+span {
+  font-family: 'Avenir-Heavy' ; 
+  font-size : 15px ; 
+}
+
+.desc {
+  font-family: 'Avenir-Roman' ; 
+  font-size : 13px ;  
+}
+
+.search {
+  position: relative;
+  top: 9px;
+
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+input { 
+  border : none ; 
+}
+
+input:focus { 
+  border : none ; 
+  outline:none;
+
+}
+

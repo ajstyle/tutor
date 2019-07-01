@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="has-search">
+            <div class="row">
+              <div class="col-md-12" style = 'background : white ; display: flex '>
+                  <i class="fa fa-search search"></i>
+                  <input type="text" class="form-control" placeholder="Search">
+              </div>
+             
+            </div>
+        
+          </div>
+        <mat-list role="list" class = 'p-2' *ngFor = 'let lesson of Schedulelessons'>
+            <mat-list-item  >
+                <div class="col-md-10">
+                  <span style = 'display : flex '>
+                    <img [src]="lesson.avatar"  class="avatar mr-3">
+                      <span> {{lesson.name}} <br/> <span class = 'desc'>{{lesson.desc}} </span> </span>
+                     
+                </span>
+              
+                </div>
+                <div class="col-md-2 float-right">
+                    <i class="fa fa-times" ></i>
+                </div>
+            </mat-list-item>
+            
+            <mat-divider></mat-divider>
+          </mat-list>
+    </div>
+    <div class="col-md-8 text-center">
+      <div class="card">
+        <div class="card-body ">
+            <div class="calendar-wrapper center">
+                <mat-calendar #calendar [(selected)]="selectedDate" (monthSelected)="monthSelected($event)" (selectedChange)="onDateChanged($event)"></mat-calendar>
+            </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</div>

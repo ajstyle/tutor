@@ -19,6 +19,7 @@
 
 .example-sidenav {
   padding: 10px;
+  width : 18% ; 
       background : #083349 ; 
 }
 
@@ -26,7 +27,24 @@
   background : #083349  !important; 
 }
 
+.active-link {
+  color : white ;
+  background-color : #979797
 
+}
+a {
+  color : #92A7B2 ; 
+  font-family : 'Avenir-Medium' ; 
+  font-size : 17px ; 
+  text-decoration : none ; 
+}
+
+.fa {
+  color : #92A7B2  ; 
+}
+.sideBar {
+  padding : 2px ; 
+}
 @media (max-width: 400px) { 
   .example-sidenav {
     padding: 30px;

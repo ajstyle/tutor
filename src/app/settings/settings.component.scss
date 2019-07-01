@@ -12,11 +12,24 @@
   width : 50%; padding : 9px 
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 800px) { 
   .buttonOutline {
     width: 83%;
     padding: 3px;
     margin-top: 50px;
     padding: 20px   ; 
     }
+}
+
+label{
+font-family : 'Avenir-Heavy' ; 
+}
+
+p {
+  font-family : 'Avenir-Heavy' ; 
+
+}
+button {
+  font-family : 'Avenir-Heavy' ; 
+
 }

@@ -1,11 +1,16 @@
 .avatar {
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+ 
   width: 105px;
   height: 105px;
   border-radius: 50%;
 }
+
+.para {
+  font-family : 'Avenir-Roman' ; 
+}
+
+
 .card {
   margin: 0 auto; /* Added */
   float: none; /* Added */
@@ -16,13 +21,31 @@
   border-right: 1px dashed #333;
 }
 
+.heading {
+  font-family : 'Avenir-Heavy' ; 
+  font-size: 18px ; 
+}
 
 
 
-@media (min-width: 300px) { 
+
+@media (max-width: 800px) { 
   .avatar {
     width: 70px;
     height: 70px;
   }
- 
+.col-4 {
+  padding : 0px ; 
+}
+ .list-group-item{
+    padding: 0px ; 
+ }
+
+ .col-md-9{
+   padding : 0px ; 
+ }
+ .col-md-3{
+  padding : 0px ; 
+
+ }
 }

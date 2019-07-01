@@ -7,7 +7,7 @@ import {ScheduleLessonComponent} from './schedule-lesson/schedule-lesson.compone
 import {PendingLessonComponent} from './pending-lesson/pending-lesson.component' ;
 import {SettingsQualificationComponent} from './settings-qualification/settings-qualification.component' ;
 import {ReviewComponent} from './review/review.component' ;
-
+import {ScheduleLessonStudentComponent} from './schedule-lesson-student/schedule-lesson-student.component' ;
 const routes: Routes = [{
   path : '' ,
   redirectTo : 'tutor',
@@ -44,7 +44,12 @@ const routes: Routes = [{
 {
   path : 'review',
   component : ReviewComponent
+},
+{
+  path : 'myTutors' ,
+  component : ScheduleLessonStudentComponent
 }
+
 
 ];
 
