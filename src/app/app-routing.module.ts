@@ -8,6 +8,7 @@ import {PendingLessonComponent} from './pending-lesson/pending-lesson.component'
 import {SettingsQualificationComponent} from './settings-qualification/settings-qualification.component' ;
 import {ReviewComponent} from './review/review.component' ;
 import {ScheduleLessonStudentComponent} from './schedule-lesson-student/schedule-lesson-student.component' ;
+import {BlockScheduleComponent} from './block-schedule/block-schedule.component' ;
 const routes: Routes = [{
   path : '' ,
   redirectTo : 'tutor',
@@ -48,7 +49,12 @@ const routes: Routes = [{
 {
   path : 'myTutors' ,
   component : ScheduleLessonStudentComponent
+},
+{
+  path : 'blockSchedule' ,
+  component : BlockScheduleComponent
 }
+
 
 
 ];

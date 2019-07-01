@@ -16,6 +16,7 @@ import { ReviewPopupComponent } from './review-popup/review-popup.component';
 import { ReviewComponent } from './review/review.component';
 import { RatingModule } from 'ng-starrating';
 import { ScheduleLessonStudentComponent } from './schedule-lesson-student/schedule-lesson-student.component';
+import { BlockScheduleComponent } from './block-schedule/block-schedule.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ScheduleLessonStudentComponent } from './schedule-lesson-student/schedu
     SettingsQualificationComponent,
     ReviewPopupComponent,
     ReviewComponent,
-    ScheduleLessonStudentComponent
+    ScheduleLessonStudentComponent,
+    BlockScheduleComponent
   ],
   imports: [
     BrowserModule,

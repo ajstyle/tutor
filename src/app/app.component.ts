@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'studentApp';
   showFiller = false;
   events = [];
+  navText = 'Tutor';
   sideBarMenu = [
     {
     name : 'Tutor' ,
@@ -58,9 +59,20 @@ export class AppComponent {
                   icon : 'fa fa-user-o' ,
                   active : false
                   },
-                
-  
+                  {
+                    name : 'Block Schedule' ,
+                    url : 'blockSchedule' ,
+                    icon : 'fa fa-calender' ,
+                    active : false
+                    },
+
+
+
 
 ] ;
+
+setText(sidebar) {
+  this.navText = sidebar.name ;
+}
 
 }

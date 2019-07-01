@@ -1,0 +1,32 @@
+.calendar-wrapper{
+  width: 50%;
+}
+
+.booked {
+  width : 14px ; 
+  height: 14px ;
+  background : #24C1A5 ;
+  display: flex;
+}
+
+.available{
+  width : 14px ; 
+  height: 14px ;
+  background : white ;
+  display: flex;
+}
+
+.unavailable{
+  width : 14px ; 
+  height: 14px ;
+  background : #B3E1F7 ;
+  display: flex;
+}
+
+.status{
+  position: relative;
+  left: 17px;
+  top: -7px;
+}  
+
+

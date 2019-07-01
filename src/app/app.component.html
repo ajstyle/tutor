@@ -6,14 +6,14 @@
    <span >
     <i class="fa fa-bars" aria-hidden="true" (click)="drawer.toggle()" style = 'color : white ; cursor : pointer ;  ' ></i> 
    </span>
-    <span class = 'navText' >My Tutor </span>
+    <span class = 'navText' >{{navText}} </span>
   </div>  
   </ul>
 </nav>
 <mat-drawer-container class="example-container"  autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
     <div *ngFor = 'let sideBar of sideBarMenu'>
-    <a [routerLink] = 'sideBar.url'  routerLinkActive="active-link" > <p class = 'ml-3 sideBar'><i [class]="sideBar.icon" aria-hidden="true"></i>&nbsp;&nbsp;
+    <a [routerLink] = 'sideBar.url'  routerLinkActive="active-link"  (click) = 'setText(sideBar)'> <p class = 'ml-3 sideBar'><i [class]="sideBar.icon" aria-hidden="true"></i>&nbsp;&nbsp;
       {{sideBar.name}} </p></a>
     </div>
   </mat-drawer>

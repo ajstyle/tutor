@@ -7,6 +7,7 @@
   display: flex;
     align-items: center;
   justify-content: center;
+  margin : -1px ; 
 }
 
 .navText {
@@ -41,6 +42,10 @@ a {
 
 .fa {
   color : #92A7B2  ; 
+}
+
+.navbar {
+padding : 20px ; 
 }
 .sideBar {
   padding : 2px ; 
