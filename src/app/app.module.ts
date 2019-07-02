@@ -17,7 +17,8 @@ import { ReviewComponent } from './review/review.component';
 import { RatingModule } from 'ng-starrating';
 import { ScheduleLessonStudentComponent } from './schedule-lesson-student/schedule-lesson-student.component';
 import { BlockScheduleComponent } from './block-schedule/block-schedule.component';
-
+import {ResponsiveService} from './services/responsive.service';
+import { FeatureComponent } from './feature/feature.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { BlockScheduleComponent } from './block-schedule/block-schedule.componen
     ReviewPopupComponent,
     ReviewComponent,
     ScheduleLessonStudentComponent,
-    BlockScheduleComponent
+    BlockScheduleComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { BlockScheduleComponent } from './block-schedule/block-schedule.componen
     MatTabsModule,
     RatingModule
   ],
-  providers: [],
+  providers: [ResponsiveService],
   bootstrap: [AppComponent],
   entryComponents : [ReviewPopupComponent]
 })

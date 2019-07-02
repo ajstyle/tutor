@@ -10,8 +10,11 @@ h2 {
   font-family: 'Avenir-Heavy'; 
 
 }
-
+.col-md-4{
+  padding: 0px;
+}
 .src{
-  width : 175px ; 
-  height: 300px ;
+  max-width : 100% ; 
+  max-height: 100% ;
+
 }

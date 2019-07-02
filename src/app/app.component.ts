@@ -24,19 +24,19 @@ export class AppComponent {
       active : false
       },
       {
-        name : 'completeLesson' ,
+        name : 'Complete Lesson' ,
         url : 'completeLesson' ,
         icon : '' ,
         active : false
         },
         {
-          name : 'scheduleSetting' ,
+          name : 'Schedule Setting' ,
           url : 'scheduleLesson' ,
           icon : '' ,
           active : false
           },
           {
-            name : 'pendingLesson' ,
+            name : 'Pending Lesson' ,
             url : 'pendingLesson' ,
             icon : '' ,
             active : false
@@ -65,6 +65,12 @@ export class AppComponent {
                     icon : 'fa fa-calender' ,
                     active : false
                     },
+                    {
+                      name : 'Feature' ,
+                      url : 'feature' ,
+                      icon : 'fa fa-calender' ,
+                      active : false
+                      },
 
 
 

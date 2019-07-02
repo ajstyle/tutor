@@ -12,7 +12,13 @@
 
 }
 
+input {
+  width : 40rem ;
+}
+textarea {
+  width : 40rem ; 
 
+}
 .numberContainer {
 width: 121px;
 height: 113px;
@@ -32,3 +38,34 @@ margin-left: 30px;
     overflow-y: hidden; // hide vertical
 overflow-x: hidden; // hide horizontal
   }
+
+  .select{
+    width : 40rem ; 
+  }
+
+  @media (max-width: 800px) { 
+    .select {
+      width : 20rem ; 
+
+    }
+    textarea {
+      width : 20rem ; 
+    
+    }
+    .center {
+     width : 100% ;  
+      }
+      .numberContainer{
+        width: 121px;
+        border: 0.5px solid grey;
+        margin-left: 6px;
+  }
+  .timeContainer {
+    border: 1px solid grey;
+    margin-left: 5px;
+    width: auto;
+    height: auto;
+    line-height : 25px ; 
+}
+  }
+

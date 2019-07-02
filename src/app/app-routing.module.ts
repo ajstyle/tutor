@@ -9,6 +9,7 @@ import {SettingsQualificationComponent} from './settings-qualification/settings-
 import {ReviewComponent} from './review/review.component' ;
 import {ScheduleLessonStudentComponent} from './schedule-lesson-student/schedule-lesson-student.component' ;
 import {BlockScheduleComponent} from './block-schedule/block-schedule.component' ;
+import {FeatureComponent} from './feature/feature.component' ; 
 const routes: Routes = [{
   path : '' ,
   redirectTo : 'tutor',
@@ -21,10 +22,7 @@ const routes: Routes = [{
   path : 'settings' ,
   component : SettingsComponent
 },
-{
-  path : 'settings' ,
-  component : SettingsComponent
-},
+
 {
   path : 'completeLesson' ,
   component : CompleteLessonComponent
@@ -53,7 +51,12 @@ const routes: Routes = [{
 {
   path : 'blockSchedule' ,
   component : BlockScheduleComponent
+},
+{
+  path : 'feature' ,
+  component : FeatureComponent
 }
+
 
 
 

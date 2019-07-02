@@ -1,6 +1,7 @@
 import { Component, OnInit , ViewChild } from '@angular/core';
 import Lity from 'lity';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {ResponsiveService} from '../services/responsive.service' ;
 @Component({
   selector: 'app-pending-lesson',
   templateUrl: './pending-lesson.component.html',
@@ -10,16 +11,30 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 
 export class PendingLessonComponent implements OnInit {
 
-
+  public isMobile: boolean;
   displayedColumns: string[] = ['Tutor', 'Schedule', 'Hours', 'Type', 'Cancelled', 'Actions'];
   dataSource: MatTableDataSource<PendingClass>  ;
   @ViewChild(MatPaginator ,  {static: false}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
-  constructor() {     this.dataSource = new MatTableDataSource(ELEMENT_DATA); }
+  constructor(public responsiveService: ResponsiveService ) {     this.dataSource = new MatTableDataSource(ELEMENT_DATA); }
 
   ngOnInit() {
+    this.onResize(event);
+   // this.responsiveService.checkWidth();
+    this.responsiveService.checkWidth();
+
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  onResize(event) {
+    console.log(event) ;
+    this.responsiveService.checkWidth();
+
+    this.responsiveService.getMobileStatus().subscribe(isMobile => {
+      this.isMobile = isMobile;
+      console.log('this.isMobile=======',this.isMobile) ; 
+    });
   }
   playRecording() {
     Lity('https://www.youtube.com/watch?v=XSGBVzeBUbk');

@@ -1,5 +1,7 @@
 
-
+<div (window:resize)="onResize($event)">
+  
+  <div *ngIf = '!this.isMobile'>
   <div class="has-search">
     <div class="row">
       <div class="col-md-8" style = 'background : white '>
@@ -57,4 +59,98 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 </table>
+</div>
 
+<div *ngIf = 'this.isMobile'>
+    <div class="has-search">
+        <div class="row">
+          <div class="col-md-12" style = 'background : white '>
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="col-md-12" style = 'background : white '>
+              <!-- <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator> -->
+    
+          </div>
+        </div>
+    
+      </div>
+      <mat-list role="list" style = 'background : #979797 '>
+          <mat-list-item role="listitem" >
+             <div class="row" style = 'width: 100%;'>
+                <div class="col-6">
+                    <span class = 'heading'>TUTOR</span> 
+                    <p>tutor2</p>
+                    <span class = 'heading'>HOURS</span> 
+                    <p>2.0</p>
+                    <span class = 'heading'>Cancelled</span> 
+                    <p>2.0</p>
+                  </div>
+                  <div class="col-6">
+                      <span class = 'heading'>SCHEDULE</span> 
+                      <p>tutor2</p>
+                      <span class = 'heading'>TYPE</span> 
+                      <p>tutor2</p>
+                      <p>No link to online session </p> 
+
+                </div>
+             </div> 
+             <mat-divider> </mat-divider>
+
+          </mat-list-item>
+         
+        </mat-list>
+        <mat-list role="list" style = 'background : white'>
+            <mat-list-item role="listitem">
+               <div class="row" style = 'width: 100%;'>
+                  <div class="col-6">
+                      <span class = 'heading'>TUTOR</span> 
+                      <p>tutor2</p>
+                      <span class = 'heading'>HOURS</span> 
+                      <p>2.0</p>
+                      <span class = 'heading'>Cancelled</span> 
+                      <p>2.0</p>
+                    </div>
+                    <div class="col-6">
+                        <span class = 'heading'>SCHEDULE</span> 
+                        <p>tutor2</p>
+                        <span class = 'heading'>TYPE</span> 
+                        <p>tutor2</p>
+                        <p>No link to online session </p> 
+  
+                  </div>
+               </div> 
+             
+            </mat-list-item>
+            <mat-divider>            </mat-divider>
+
+          </mat-list>
+          <mat-list role="list">
+              <mat-list-item role="listitem">
+                 <div class="row" style = 'width: 100%;'>
+                    <div class="col-6">
+                        <span class = 'heading'>TUTOR</span> 
+                        <p>tutor2</p>
+                        <span class = 'heading'>HOURS</span> 
+                        <p>2.0</p>
+                        <span class = 'heading'>Cancelled</span> 
+                        <p>2.0</p>
+                      </div>
+                      <div class="col-6">
+                          <span class = 'heading'>SCHEDULE</span> 
+                          <p>tutor2</p>
+                          <span class = 'heading'>TYPE</span> 
+                          <p>tutor2</p>
+                          <p>No link to online session </p> 
+    
+                    </div>
+                 </div> 
+               
+              </mat-list-item>
+              <mat-divider></mat-divider>
+
+            </mat-list>
+    </div>
+
+
+</div>

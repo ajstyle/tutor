@@ -1,6 +1,8 @@
 import { Component, OnInit , ViewChild} from '@angular/core';
 import Lity from 'lity';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {ResponsiveService} from '../services/responsive.service' ;
+
 export interface StudentClass {
   Tutor: string;
   Schedule: string;
@@ -36,14 +38,27 @@ export class CompleteLessonComponent implements OnInit {
   dataSource: MatTableDataSource<StudentClass>  ;
   @ViewChild(MatPaginator ,  {static: false}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
-  constructor() {     this.dataSource = new MatTableDataSource(ELEMENT_DATA); }
+  public isMobile: boolean;
+
+  constructor(public responsiveService: ResponsiveService )  {     this.dataSource = new MatTableDataSource(ELEMENT_DATA); }
 
   ngOnInit() {
+    this.onResize(event);
+    // this.responsiveService.checkWidth();
+    this.responsiveService.checkWidth();
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
 
+  onResize(event) {
+    console.log(event) ;
+    this.responsiveService.checkWidth();
 
+    this.responsiveService.getMobileStatus().subscribe(isMobile => {
+      this.isMobile = isMobile;
+      console.log('this.isMobile=======',this.isMobile) ; 
+    });
+  }
 
   playRecording() {
     Lity('https://www.youtube.com/watch?v=XSGBVzeBUbk');
