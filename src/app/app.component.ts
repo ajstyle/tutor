@@ -79,7 +79,7 @@ export class AppComponent {
 
 ] ;
 
-constructor(public router: Router , private nav: NavbarService) {
+constructor(public router: Router , public nav: NavbarService) {
 
 }
 setText(sidebar) {
