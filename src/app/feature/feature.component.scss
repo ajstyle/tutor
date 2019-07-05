@@ -7,13 +7,118 @@
   width : 567px ; 
   height: 318px ;
 }
+.logo {
+  width: 21px !important ; 
+   
+    margin-top: -2px;
 
+}
+
+  footer {
+  clear: both;
+  position: relative;
+
+    padding : 40px ; 
+  background-color : #083349;
+ 
+  
+}
+
+.footer-content{
+  color: white ; 
+  font-family: Avenir-book ; 
+}
+
+.menu {
+  flex: 0 0 2px;
+  height: 60%;
+  align-self: center;
+  width: 2px;
+  background-color: #ddd;
+
+}
+
+.line {
+  margin-left: 25px; 
+}
+
+.facebook{
+
+  margin-left: -22px;
+  width: 176px;
+  height: 31px;
+  margin-left: -22px;
+  padding-right: 11px;
+}
+
+.col-md-2 {
+  max-width: 10.666667% !important;
+}
+
+.btn-sm {
+  border : 2px solid white !important ; 
+  font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+
+}
 .mat-list-base {
   padding-top: 27px;
   display: block;
   -webkit-tap-highlight-color: transparent;
 }
+.heading{
+  margin-top: 30px;
+  position: relative;
+  left: 10px;
+  font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
 
+}
+
+.saveButton {
+  font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+
+}
+.bg-light {
+  background-color: white !important;
+  box-shadow: 0 2px 1px -1px white, 0 1px 1px 0, 0 1px 3px 0 rgba(0,0,0,.12);
+}
+.nav-item{
+  font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+  color : black !important; 
+}
+a {
+  color : black !important ; 
+  padding: 12px 32px !important ; 
+}
+h2 {
+  font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+  padding-top: 100px ; 
+  padding-bottom: 100px ; 
+}
+.desc {
+  font-family :  'Avenir-Roman' , 'arial', sans-serif; 
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  top: -20px;
+
+}
+.signup {
+  padding-left: 42px !important;
+  padding-right: 42px !important;
+  color : black ; 
+  background-color: white ;
+
+}
+
+
+.footer-button {
+  padding-left: 42px !important;
+  padding-right: 42px !important;
+  color : white ; 
+  background-color : #083349;
+  width: 193px;
+  height: 40px;
+}
 .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
   display: block;
    height: auto !important; 
@@ -25,13 +130,49 @@
 .img-top{
   margin-top: 70px ; 
 }
+.footer-copy{
+    color : #4a4a4a;
+    font-size : 15px ; 
+
+}
 @media (max-width: 800px) { 
   .img-top{
     margin-top: 10px ; 
   }
+
+  footer {
+    clear: both;
+    position: relative;
+      padding-top : 40px ; 
+    background-color : #083349;
+   
+    
+  }
+  
+  .saveButton {
+    font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+    width: 150px;
+  padding: 10px;
+  position: relative;
+  right: 42px;
+}
+  
+footer{
+  padding: 20px;  
+}
+
+  h3 {
+    font-family :  'Avenir-Heavy' , 'arial', sans-serif; 
+    padding-top: 30px ; 
+    padding-bottom: 30px ; 
+  }
+
+  .heading{
+    margin-top: 6px;
+  }
   .images{
-    width: 290px;
-    height: 200px ;
+    width: 100%;
+    height: 100% ;
 }
 .col-md-8 {
   padding : 0px ; 

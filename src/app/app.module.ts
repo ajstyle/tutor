@@ -18,7 +18,10 @@ import { RatingModule } from 'ng-starrating';
 import { ScheduleLessonStudentComponent } from './schedule-lesson-student/schedule-lesson-student.component';
 import { BlockScheduleComponent } from './block-schedule/block-schedule.component';
 import {ResponsiveService} from './services/responsive.service';
-import { FeatureComponent } from './feature/feature.component'
+import {NavbarService} from './services/navbar.service';
+
+import { FeatureComponent } from './feature/feature.component' ; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +47,7 @@ import { FeatureComponent } from './feature/feature.component'
     MatTabsModule,
     RatingModule
   ],
-  providers: [ResponsiveService],
+  providers: [ResponsiveService, NavbarService],
   bootstrap: [AppComponent],
   entryComponents : [ReviewPopupComponent]
 })

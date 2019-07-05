@@ -13,7 +13,13 @@
           </div>
         <mat-list role="list" class = 'p-2' *ngFor = 'let lesson of Schedulelessons'>
             <mat-list-item  >
-                <div class="col-md-10">
+              <div class="container-fluid">
+
+              
+              <div class="row">
+
+            
+                <div class="col-md-8">
                   <span style = 'display : flex '>
                     <img [src]="lesson.avatar"  class="avatar mr-3">
                       <span> {{lesson.name}} <br/> <span class = 'desc'>{{lesson.desc}} </span> </span>
@@ -21,9 +27,11 @@
                 </span>
               
                 </div>
-                <div class="col-md-2 float-right">
+                <div class="col-md-4 ">
                     <i class="fa fa-times" ></i>
                 </div>
+              </div>
+            </div>
             </mat-list-item>
             
             <mat-divider></mat-divider>

@@ -1,23 +1,225 @@
 
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">   
+      <img src="../../assets/images/right.png" class="d-inline-block align-top logo" alt="">
+    
+      <img src="../../assets/images/GradeGetter.png" width="110px" height="17px" class="d-inline-block align-top" alt="">
+    
+ </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<mat-list role="list" *ngFor  = 'let feature of features'>
-    <mat-list-item role="listitem">
-      <div class="row" style = 'width : 100%'>
-        <div class='col-md-4 img-top'>
-            <img [src] = 'feature.icon'  class = 'icon float-left mt-3 ' />
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Why us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reviews</a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tutors</a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="#">Try Demo</a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link" href="#">Share</a>
+      </li>
+      <li class="nav-item">
+        <span style = 'display : flex'>
+        <a class="nav-link" href="#">SignIn</a>&nbsp;&nbsp;
+        <button class="btn btn-sm btn-outline-secondary signup" type="button">Sign up Free</button>
+          </span>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+
+
+<div  (window:resize)="onResize($event)">
+<div *ngIf = '!isMobile'>
+  <div> 
+    <h2 class = 'text-center'>Our Features</h2>
+  </div>
+<div class="container">
+    <mat-list role="list" *ngFor  = 'let feature of features'>
+        <mat-list-item role="listitem">
+          <div class="row" style = 'width : 100%'>
+            <div class='col-md-4 '>
+                <p><img [src] = 'feature.icon'  class = 'icon float-left mt-3 ' /></p><br/>
+    
+               <p class = 'heading'> {{feature.heading}} </p>
+               <span class = 'desc'> {{feature.desc}} </span>
+            </div>
+            <div class="col-md-8  ">
+                <img [src] = 'feature.image' class = 'images float-right p-3' />
+    
+            </div>
+          </div>
+        
+        </mat-list-item>
+    
+    <mat-divider></mat-divider>
+      </mat-list>
+      <div class = 'center mt-4' style = 'width : 20%'>
+      <button type="submit" class="button saveButton" 
+      >Get Started</button>
+      </div>
+    
+    
+</div>
+<div class = 'mt-5'>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-12 ">
+          <span class = 'footer-content '> Contact Us  
+              <img class = 'line' src = '../../assets/images/line.png'>
+
+          </span>  
+      </div>
+      <div class="col-md-2 col-12">
+          <span class = 'footer-content text-center'> About 
+          <img class = 'line' src = '../../assets/images/line.png'>
+        </span> 
+      </div>
+      <div class="col-md-2">
+          <span class = 'footer-content'>FAQs 
+          <img class = 'line' src = '../../assets/images/line.png'>
+        </span>
 
         </div>
-        <div class="col-md-8  ">
-            <img [src] = 'feature.image' class = 'images float-right p-3' />
+      <div class="col-md-2">
+          <span class = 'footer-content'>Blog  
+          <img class = 'line' src = '../../assets/images/line.png'>
+        </span>
+        </div>
+      <div class="col-md-2">
+          <span class = 'footer-content'>Team  
+          <img  class = 'line' src = '../../assets/images/line.png'>
+        </span>
+        </div>
+        <div class="col-md-2">
+            <span class = 'footer-content'>Refund  
+            <img class = 'line' src = '../../assets/images/line.png'>
+          </span>
+          </div>
+          <img class = 'line facebook' src = '../../assets/images/facebook.png'>
+          <span>
+          <button class="btn btn-sm btn-outline-secondary footer-button" type="button" style = 'margin-left: 117px;'>Become a tutor</button>
+            </span>
 
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-3">
+        <p class = 'footer-copy'> &copy; 2019 Grader Gatter </p>
+      </div>
+      <div class="col-md-3">
+          <p> Terms of services </p>
+        </div>
+        <div class="col-md-3">
+            <p> Privacy Policy </p>
+          </div>
+    </div> -->
+  </div>
+
+
+</footer>
+</div>
+</div>
+
+
+<div *ngIf = 'isMobile'>
+    <div> 
+        <h3 class = 'text-center'>Our Features</h3>
+      </div>
+    <div class="container-fluid">
+        <mat-list role="list" *ngFor  = 'let feature of features'>
+            <mat-list-item role="listitem">
+              <div class="row" style = 'width : 100%'>
+                  <div class="col-md-12" style = 'padding : 0px'>
+
+                    <img [src] = 'feature.image' class = 'images' />
+                   
+          
+                  </div>
+                <div class='col-md-12  '>
+                  <div class = 'center' style = 'width : 12%'>
+                   <img [src] = 'feature.icon'  class = 'icon' /><br/>
+                    </div>
+                   <p class = 'heading text-center'> {{feature.heading}} </p>
+                   <p class = 'desc text-center'> {{feature.desc}} </p>
+                </div>
+              
+              </div>
+            
+            </mat-list-item>
+        
+        <mat-divider></mat-divider>
+          </mat-list>
+          <div class = 'center mt-4' style = 'width : 20%'>
+          <button type="submit" class="button saveButton" 
+          >Get Started</button>
+          </div>
+        
+        
+    </div>
+    <div class = 'mt-5'>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+            <div class = 'col-12 '>
+                <img class = 'line facebook' src = '../../assets/images/facebook.png'>
+                </div>
+          <div class="col-12 mt-3">
+              <span class = 'footer-content '> Contact Us      
+              </span>  
+          </div>
+        
+          <div class="col-12 mt-1">
+              <span class = 'footer-content text-center'> About 
+            </span> 
+          </div>
+          <div class="col-md-12 mt-1">
+              <span class = 'footer-content'>FAQs 
+            </span>
+    
+            </div>
+          <div class="col-md-12 mt-1">
+              <span class = 'footer-content'>Blog  
+            </span>
+            </div>
+          <div class="col-md-12 mt-1">
+              <span class = 'footer-content'>Team  
+            </span>
+            </div>
+            <div class="col-md-12 mt-1">
+                <span class = 'footer-content'>Refund  
+              </span>
+              </div>
+              <div class="col-md-12 mt-1">
+                  <button class="btn btn-sm btn-outline-secondary footer-button" type="button">Become a tutor</button>
+
+              </div>
+             
+    
         </div>
       </div>
     
-    </mat-list-item>
-
-<mat-divider></mat-divider>
-  </mat-list>
-
-  <button type="submit" class="button saveButton" 
-  >Save Changes</button>
+    
+    </footer>
+    </div>
+  </div>
+  </div>
