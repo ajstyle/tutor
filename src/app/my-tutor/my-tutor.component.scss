@@ -1,16 +1,83 @@
 .avatar {
   vertical-align: middle;
- 
-  width: 105px;
-  height: 105px;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.lessonName{
+  font-size: 15px ; 
+  font-family : 'Avenir-Heavy' ; 
+
+}
+.fa-search{
+  position: relative;
+  left: 22px;
+  bottom: -10px;
+}
+.avatarImages{
+  width : 50px ; 
+  height: 50px ;
+}
+
+input {
+  border : 0px none;
+}
+.centerButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 48%;
+  margin-top: 30px;
+}
+
+mat-tab {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-body {
+  padding-top: 1px ; 
+}
+.right-body{
+  padding: 23px;}
+.col-md-12{
+  padding: 5px;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.para {
+  font-family : 'Avenir-Roman' ; 
+  font-size: 13px;
+  color : #7B88A0;
+}
+.desc{
+  font-size : 13px ; 
+  font-family : 'Avenir-Roman' ; 
+
+}
+.container-fluid{
+  padding: 0px ; 
+}
+.avatarList{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
-.para {
-  font-family : 'Avenir-Roman' ; 
+.avatar{
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
-
-
 .card {
   margin: 0 auto; /* Added */
   float: none; /* Added */
@@ -26,8 +93,19 @@
   font-size: 18px ; 
 }
 
+.thumb{
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
 
+} 
 
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  display: block;
+   height: auto !important; 
+  width: 100%;
+  padding: 0;
+}
 
 @media (max-width: 800px) { 
   .avatar {
@@ -37,6 +115,7 @@
 .col-4 {
   padding : 0px ; 
 }
+
  .list-group-item{
     padding: 0px ; 
  }

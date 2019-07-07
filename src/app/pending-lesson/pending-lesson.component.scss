@@ -13,10 +13,17 @@
   text-align: center;
   pointer-events: none;
   color: #aaa;
+ 
+}
+.fa-search{
+  position: relative;
+  left: 22px;
+  bottom: -10px;
 }
 table {
   width: 100%;
 }
+
 
 input { 
   border : none ; 

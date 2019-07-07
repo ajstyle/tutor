@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import {Router} from '@angular/router' ;
 import {NavbarService} from './services/navbar.service' ;
+import {ResponsiveService} from './services/responsive.service' ;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'studentApp';
   showNav: boolean ;
   showFiller = false;
   events = [];
   navText = 'Tutor';
+  mobileScreen = true  ;
   sideBarMenu = [
     {
     name : 'Tutor' ,
@@ -79,9 +82,27 @@ export class AppComponent {
 
 ] ;
 
-constructor(public router: Router , public nav: NavbarService) {
+constructor(public router: Router , public nav: NavbarService , public responsiveService: ResponsiveService) {
+
 
 }
+ngOnInit() {
+
+  this.responsiveService.getMobileStatus().subscribe( isMobile => {
+    if (isMobile) {
+
+      this.mobileScreen = true ;
+    } else {
+      this.mobileScreen = false ;
+    }
+  });
+  this.onResize();
+}
+
+onResize() {
+  this.responsiveService.checkWidth();
+}
+
 setText(sidebar) {
   this.navText = sidebar.name ;
 }

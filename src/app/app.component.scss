@@ -3,6 +3,52 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.gift {
+  color : #23A4EF ; 
+  font-family: 'Avenir-Heavy';
+  top: 8px;
+  position: relative;
+
+}
+.giftImage{
+  position: relative;
+  top: -4px ;
+}
+[data-letters]:before {
+  content:attr(data-letters);
+  display:inline-block;
+  font-size:1em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  border-radius:50%;
+  background:#2F5265;
+  vertical-align:middle;
+  color:white;
+  }
+
+.fa-envelope-o {
+  font-size: 31px;
+    position: relative;
+   
+    left: 54px;
+    top: 4px;
+}
+.button {
+width : 159px ;
+height: 43px ;
+background-color: #2F5265;
+margin-left: 35px;
+}
+.buttonSchedule{
+  width : 159px ;
+height: 43px ;
+color : white;
+background-color: #20A4EF;
+margin-left: 30px;
+}
+
 .example-sidenav-content {
   display: flex;
     align-items: center;
@@ -11,11 +57,13 @@
 }
 
 .navText {
-  padding: 4px;
+
+margin-left: 23px;
   margin-top: -8px;
-  margin-left: 13px;
+  
   color : white ; 
-  padding: 4px;
+  font-size: 23px;
+  font-family: Avenir-Medium;
 }
 
 .example-sidenav {
@@ -45,10 +93,14 @@ a {
 }
 
 .navbar {
-padding : 20px ; 
 }
 .sideBar {
   padding : 2px ; 
+}
+.letter{
+  position: relative;
+  left: 85px;
+
 }
 @media (max-width: 800px) { 
   .example-sidenav {
@@ -57,4 +109,11 @@ padding : 20px ;
     background : #083349 ; 
   }
 
+  .button {
+    display: none ; 
+  }
+  .gift {
+    display : none ; 
+  }
+ 
 }

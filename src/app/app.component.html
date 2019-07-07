@@ -1,17 +1,37 @@
+<div (window:resize)="onResize($event)">
+<div *ngIf = '!mobileScreen'>
+
 <nav class="navbar navbar-expand-sm bg-light" *ngIf = 'nav.visible'>
 
   <!-- Links -->
-  <ul class="navbar-nav">
-   <div>
-   <span >
-    <i class="fa fa-bars" aria-hidden="true" (click)="drawer.toggle()" style = 'color : white ; cursor : pointer ;  ' ></i> 
-   </span>
-    <span class = 'navText' >{{navText}} </span>
+   <div class = 'container-fluid'>
+     <div class="row" style = 'width : 100% '>
+       <div class="col-md-6 col-7">
+          <span *ngIf = 'mobileScreen'>
+              <i class="fa fa-bars" aria-hidden="true" (click)="drawer.toggle()" style = 'color : white ; cursor : pointer ;  ' ></i> 
+             </span>
+              <span class = 'navText' >{{navText}} </span>
+       </div>
+       <div class="col-md-6 col-5">
+         <div style = 'display : flex'>
+         <span class = 'gift'> Get $25  <img class = 'giftImage' src = '../assets//images/giftbox.png'/> </span>
+        <button class = 'button'> Request new tutor </button>
+        <button class = 'button buttonSchedule'> Schedule a lesson </button>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+       <div>
+        <span data-letters="AL" class = 'letter'> </span>
+        </div>
+        </div>
+        </div>
+     </div>
+   
   </div>  
-  </ul>
+
 </nav>
-<mat-drawer-container class="example-container"  autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="over">
+
+<mat-drawer-container class="example-container"  autosize  >
+
+  <mat-drawer #drawer class="example-sidenav" mode="side"  opened >
     <div *ngFor = 'let sideBar of sideBarMenu'>
     <a [routerLink] = 'sideBar.url'  routerLinkActive="active-link"  (click) = 'setText(sideBar)'> <p class = 'ml-3 sideBar'><i [class]="sideBar.icon" aria-hidden="true"></i>&nbsp;&nbsp;
       {{sideBar.name}} </p></a>
@@ -23,3 +43,51 @@
   </div>
 
 </mat-drawer-container>
+</div>
+
+
+<div *ngIf = 'mobileScreen'>
+    <nav class="navbar navbar-expand-sm bg-light" *ngIf = 'nav.visible'>
+    
+      <!-- Links -->
+       <div class = 'container-fluid'>
+         <div class="row" style = 'width : 100% '>
+           <div class="col-md-6 col-7">
+              <span >
+                  <i class="fa fa-bars" aria-hidden="true" (click)="drawer.toggle()" style = 'color : white ; cursor : pointer ;  ' ></i> 
+                 </span>
+                  <span class = 'navText' >{{navText}} </span>
+           </div>
+           <div class="col-md-6 col-5">
+             <div style = 'display : flex'>
+             <span class = 'gift'> Get $25  <img class = 'giftImage' src = '../assets//images/giftbox.png'/> </span>
+            <button class = 'button'> Request new tutor </button>
+            <button class = 'button buttonSchedule'> Schedule a lesson </button>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+           <div>
+            <span data-letters="AL" class = 'letter'> </span>
+            </div>
+            </div>
+            </div>
+         </div>
+       
+      </div>  
+    
+    </nav>
+    
+    <mat-drawer-container class="example-container"  autosize  >
+    
+      <mat-drawer #drawer class="example-sidenav" mode="drop"  >
+        <div *ngFor = 'let sideBar of sideBarMenu'>
+        <a [routerLink] = 'sideBar.url'  routerLinkActive="active-link"  (click) = 'setText(sideBar)'> <p class = 'ml-3 sideBar'><i [class]="sideBar.icon" aria-hidden="true"></i>&nbsp;&nbsp;
+          {{sideBar.name}} </p></a>
+        </div>
+      </mat-drawer>
+    
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    
+    </mat-drawer-container>
+    </div>
+    </div>

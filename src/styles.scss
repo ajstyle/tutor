@@ -49,16 +49,14 @@ tr.mat-header-row {
   .button {
     background: #23A4EF;
     color: white;
-    padding: 14px;
+    padding: 11px;
     width: 100%;
+    border-radius: 5px;
+    font-family: Avenir-Heavy ; 
+    font-size: 15px ; 
   }
 
-  .button:hover {
-    background: #23A4EF;
-    color: white;
-    padding: 14px;
-    width: 100%;
-  }
+ 
 }
 
 
@@ -108,8 +106,25 @@ i {
   width: 50%;
   
 }
-
+.mat-tab-label-content{
+font-family: Avenir-Heavy;
+}
 
 .mat-calendar-body-selected {
   background : #23A4EF !important ; 
+}
+
+.mat-tab-label {
+  height: 40px;
+  padding: 0 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: .6;
+  min-width: 18px !important;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
 }

@@ -18,12 +18,12 @@ export class ScheduleLessonStudentComponent implements AfterViewInit {
   {
     name : 'Sandeep Tiwari' ,
     desc : 'texas Christian University' ,
-    avatar : './../assets//images/avatar2.jpg'
+    avatar : './../assets//images/avatar2.png'
   } ,
   {
     name : 'Alexander Himstead' ,
     desc : 'Chapman University' ,
-    avatar : './../assets//images/avatar2.jpg'
+    avatar : './../assets//images/james.png '
   }
 ] ;
   constructor(private renderer: Renderer2) { }
